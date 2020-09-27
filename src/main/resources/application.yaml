@@ -1,0 +1,14 @@
+# YAML supports comments
+quarkus:
+  datasource:
+    db-kind: postgresql
+    reactive:
+      url: postgresql://localhost:5432/blogdb
+    username: postgres
+    password: docker
+
+# For configuration property names that use quotes, do not split the string inside the quotes.
+  log:
+    category:
+      "io.quarkus.category":
+        level: INFO
